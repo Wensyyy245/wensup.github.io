@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#07060f">
+<title>WensUP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div class="blobs"><i></i><i></i><i></i></div>
+
+<div id="loader">
+  <div class="loader-logo">Wens<b>UP</b></div>
+  <div class="loader-bar"><i></i></div>
+  <div class="loader-err" id="loaderErr"></div>
+</div>
+
+<div id="app" hidden>
+  <header class="topbar">
+    <div class="logo" id="logo">Wens<b>UP</b><span class="logo-spark"></span></div>
+    <nav class="topnav" id="topnav"></nav>
+    <button class="bal-chip" id="balChip" aria-label="Пополнить баланс">
+      <span class="bal-star">★</span>
+      <span class="bal-val" id="balVal">0</span>
+      <span class="bal-plus">+</span>
+    </button>
+  </header>
+
+  <main id="view"></main>
+
+  <nav class="bottomnav" id="bottomnav"></nav>
+</div>
+
+<div id="modal-root"></div>
+<div id="toasts"></div>
+<canvas id="fx"></canvas>
+<div id="flash"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>
